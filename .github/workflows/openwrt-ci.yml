@@ -165,7 +165,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
-          # EOF
+          EOF
 
           # LuCI主题:
           cat >> .config <<EOF
@@ -186,8 +186,8 @@ jobs:
 
           # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
           cat >> .config <<EOF
-          # CONFIG_TARGET_IMAGES_PAD is not set
-          # CONFIG_VMDK_IMAGES is not set
+          CONFIG_TARGET_IMAGES_PAD is not set
+          CONFIG_VMDK_IMAGES is not set
           EOF
 
           # 
